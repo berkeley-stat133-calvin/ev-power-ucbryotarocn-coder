@@ -8,27 +8,23 @@ format: typst
 ## **Part 0: libraries**
 
 ```{r}
-
+library(tidyverse)
+library(janitor)
+library(maps)
+library(sf)
 ```
 
 ## **Part 1:** **Defining Research Question**
 
-Chosen Question:
+Chosen Question: Do states with higher renewable energy share also show stronger EV adoption in 2023?
 
 ## **Part 2: Data Preparation and Cleaning**
 
 ```{r}
+# Load CSVs
 
-```
+renew <- read_csv("data/renew_use_2023.csv") |> clean_names()
+total <- read_csv("data/total_energy_use_2023.csv") |> clean_names()
+ev <- read_csv("data/ev-registrations-by_state_2023.csv") |> clean_names()
 
-## **Part 3: Joining / Pivoting Datasets for Analysis**
 
-```{r}
-
-```
-
-## **Part 4: Mapping Visualization**
-
-```{r}
-
-```
