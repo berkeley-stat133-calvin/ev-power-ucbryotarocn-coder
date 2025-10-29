@@ -26,5 +26,3 @@ Chosen Question: Do states with higher renewable energy share also show stronger
 renew <- read_csv("data/renew_use_2023.csv") |> clean_names()
 total <- read_csv("data/total_energy_use_2023.csv") |> clean_names()
 ev <- read_csv("data/ev-registrations-by_state_2023.csv") |> clean_names()
-
-
